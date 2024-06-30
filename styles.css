@@ -1,0 +1,74 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    background: #F8EEFF;
+    background-image: url('assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: min((100% - 5rem), 600px);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5em;
+ 
+
+}
+
+.title {
+    display: flex;
+    gap: 1em;
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.471830985915493rem + 2.253521126760563vw, 3.5rem);
+    color: #301534;
+}
+
+
+.accordion:not(:last-of-type){
+  border-block-end: 1px solid #F8EEFF;
+  padding-block-end: 1em;
+  margin-block-end: 1em;
+}
+
+
+.accordion-question{
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9559859154929577rem + 0.18779342723004694vw, 1.125rem);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding-block-end: 1em;
+}
+
+.accordion-answer{
+    color: #8B6990;
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.8309859154929577rem + 0.18779342723004694vw, 1rem);
+}
+
+img{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+@media   only screen and (min-width:1000px){
+   body{
+    background:url('assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #F8EEFF;
+   }
+}
